@@ -6,7 +6,6 @@ const main = document.getElementById('main');
 const form = document.getElementById('form');
 const search = document.getElementById('search');
 
-// Fetch initial movies from the API
 getMovies(API_URL);
 
 async function getMovies(url) {
@@ -49,7 +48,6 @@ function getClassByRate(vote) {
     }
 }
 
-// Event listener for the search form
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
